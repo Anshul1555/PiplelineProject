@@ -24,4 +24,9 @@ jobs:
         run: npm run build
 
       - name: Run Tests
-        run: npm run test
+        run: npm run test-component
+
+      - name: deploy to render develop
+        run: |
+          echo "Deploying to Render production"
+          curl $RENDER_STAGING_DEPLOYHOOK
