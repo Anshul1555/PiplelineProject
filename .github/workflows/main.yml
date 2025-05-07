@@ -1,4 +1,4 @@
-name: Lint and Test workflow
+name: Test workflow
 on:
   pull_request:
     branches:
@@ -24,4 +24,4 @@ jobs:
         run: npm run build
 
       - name: Run Tests
-        run: npm run test
+        run: npm run test-component
