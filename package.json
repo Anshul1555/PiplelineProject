@@ -11,8 +11,7 @@
     "render-build": "npm install && npm run build",
     "test": "npx cypress run --browser electron",
     "test-component": "npx cypress run --component",
-    "test-gui": "npx cypress open",
-    "lint": "eslint src --ext js,tsx --report-unused-disable-directives --max-warnings 0"
+    "test-gui": "npx cypress open"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +21,7 @@
     "cypress": "^13.13.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "start-server-and-test": "^2.0.11",
     "ts-node": "^10.9.2"
   },
   "dependencies": {
